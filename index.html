@@ -7,7 +7,7 @@
   <title>Scott Vinkle</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#DC143C">
   <link rel="icon" sizes="192x192" href="https://github.com/svinkle.png?size=192">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <style>
@@ -16,16 +16,14 @@
     }
 
     body {
-      background-color: Black;
-      color: Silver;
-      font-family: "Nunito Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 2rem;
-      font-weight: 300;
+      font-weight: 400;
       margin: 2rem;
     }
 
     a {
-      color: LightGreen;
+      color: Crimson;
       text-decoration: underline;
       text-decoration-skip: ink;
     }
@@ -37,7 +35,6 @@
     }
 
     h1 {
-      color: White;
       font-family: "Schoolbell", sans-serif;
       font-size: 5rem;
       line-height: 1;
@@ -45,9 +42,7 @@
     }
 
     h2 {
-      color: White;
-      font-family: "Nunito Sans", sans-serif;
-      font-size: 2.25rem;
+      font-size: 2.5rem;
       font-weight: 900;
       line-height: 1;
       margin: 3rem 0 -1rem;
@@ -86,7 +81,7 @@
     }
 
     .link-list__icon {
-      fill: #808080;
+      fill: DimGrey;
       height: 48px;
       transition: all .3s ease;
       width: 48px;
@@ -94,26 +89,22 @@
 
     .link-list__link:focus .link-list__icon--codepen,
     .link-list__link:hover .link-list__icon--codepen {
-      /* fill: #000; */
-      fill: #fff;
+      fill: #000;
     }
 
     .link-list__link:focus .link-list__icon--facebook,
     .link-list__link:hover .link-list__icon--facebook {
-      /* fill: #000; */
       fill: #4267b2;
     }
 
     .link-list__link:focus .link-list__icon--github,
     .link-list__link:hover .link-list__icon--github {
-      /* fill: #24292e; */
-      fill: #fff;
+      fill: #24292e;
     }
 
     .link-list__link:focus .link-list__icon--instagram,
     .link-list__link:hover .link-list__icon--instagram {
-      /* fill: #24292e; */
-      fill: #fff;
+      fill: #262626;
     }
 
     .link-list__link:focus .link-list__icon--medium,
@@ -128,8 +119,7 @@
 
     .link-list__link:focus .link-list__icon--steam,
     .link-list__link:hover .link-list__icon--steam {
-      /* fill: #171a21; */
-      fill: #fff;
+      fill: #171a21;
     }
 
     .link-list__link:focus .link-list__icon--twitch,
@@ -148,10 +138,10 @@
     }
 
     .link-list__tooltip {
-      background-color: #333;
+      background-color: Black;
       border-radius: 3px;
       bottom: 110%;
-      color: #fff;
+      color: White;
       display: inline-block;
       font-size: .75rem;
       left: 50%;
@@ -165,7 +155,7 @@
     }
 
     .link-list__tooltip:before {
-      border-top: solid #333 5px;
+      border-top: solid Black 5px;
       border-bottom: solid transparent 5px;
       border-left: solid transparent 5px;
       border-right: solid transparent 5px;
@@ -214,6 +204,7 @@
       <li><a href="https://svinkle.github.io/creating-accessible-react-apps-talk">Creating Accessible React Apps</a>
         <ul>
           <li><a href="http://a11yto.com/talks">#a11yTO Camp</a><br><time datetime="2017-11-18T14:45">Nov 18, 2017</time></li>
+          <li><a href="https://groups.drupal.org/node/518261">#a11yTalks</a><br><time datetime="2018-02-28T12:00">Feb 28, 2018</time></li>
         </ul>
       </li>
     </ul>
@@ -355,22 +346,22 @@
   </svg>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
   <script>
-    WebFont.load({
-      google: {
-        families: ['Nunito+Sans:300,900', 'Schoolbell']
-      }
-    });
-  </script>
+  WebFont.load({
+  google: {
+    families: ['Roboto:400,900', 'Schoolbell']
+  }
+});
+</script>
   <script>
-    (() => {
-      const yearStartedCoding = 2000;
-      const thisYear = new Date().getFullYear();
-      const codingYears = thisYear - yearStartedCoding;
-      const codingYearsNode = document.querySelector('#codingYears');
+  (() => {
+  const yearStartedCoding = 2000;
+  const thisYear = new Date().getFullYear();
+  const codingYears = thisYear - yearStartedCoding;
+  const codingYearsNode = document.querySelector('#codingYears');
 
-      codingYearsNode.textContent = `${codingYears} years`;
-    })();
-  </script>
+  codingYearsNode.textContent = `${codingYears} years`;
+})();
+</script>
 </body>
 
 </html>
