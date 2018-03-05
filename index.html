@@ -19,7 +19,6 @@
       font-family: "Roboto", sans-serif;
       font-size: 2rem;
       font-weight: 400;
-      margin: 2rem;
     }
 
     a {
@@ -28,22 +27,33 @@
       text-decoration-skip: ink;
     }
 
+    header {
+      background-color: Crimson;
+      color: White;
+      padding: 3rem 2rem;
+    }
+
     main {
-      margin: 0 auto;
-      max-width: 44rem;
+      max-width: 45rem;
+      padding: 1rem 2rem;
       position: relative;
+    }
+
+    footer {
+      background-color: WhiteSmoke;
+      padding: 1rem 2rem;
     }
 
     h1 {
       font-family: "Schoolbell", sans-serif;
       font-size: 6rem;
       line-height: 1;
-      margin: 3.2rem 0 0;
+      margin: 0;
     }
 
     h2 {
       font-size: 2.5rem;
-      font-weight: 900;
+      font-weight: 700;
       line-height: 1;
       margin: 3rem 0 -1rem;
     }
@@ -55,11 +65,11 @@
     li {
       margin-bottom: .5rem;
     }
-    
+
     li ul {
       margin-top: 1rem;
     }
-    
+
     time {
       font-size: 1.5rem;
     }
@@ -95,9 +105,20 @@
       width: 48px;
     }
 
+    .link-list__icon--dev {
+      background-color: DimGrey;
+      fill: White;
+      padding: .5rem;
+    }
+
     .link-list__link:focus .link-list__icon--codepen,
     .link-list__link:hover .link-list__icon--codepen {
       fill: #000;
+    }
+
+    .link-list__link:focus .link-list__icon--dev,
+    .link-list__link:hover .link-list__icon--dev {
+      background-color: #000;
     }
 
     .link-list__link:focus .link-list__icon--facebook,
@@ -189,8 +210,10 @@
 </head>
 
 <body>
-  <main>
+  <header>
     <h1>Hi, I'm Scott.</h1>
+  </header>
+  <main>
     <p>I'm a front end developer and web accessibility advocate at <a href="https://shopify.com">Shopify</a>.</p>
     <h2>Some history</h2>
     <p>I've been coding on the web for <span id="codingYears">a long while</span>.</p>
@@ -222,6 +245,8 @@
         </ul>
       </li>
     </ul>
+  </main>
+  <footer>
     <h2>Find me elsewhere</h2>
     <ul class="link-list">
       <li class="link-list__item">
@@ -229,6 +254,14 @@
           <span class="link-list__tooltip">CodePen</span>
           <svg class="link-list__icon link-list__icon--codepen" viewBox="0 0 48 48" aria-hidden="true">
             <use xlink:href="#codepen"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="link-list__item">
+        <a href="https://dev.to/svinkle" class="link-list__link">
+          <span class="link-list__tooltip">DEV</span>
+          <svg class="link-list__icon link-list__icon--dev" viewBox="0 0 6.1 3" aria-hidden="true">
+            <use xlink:href="#dev"></use>
           </svg>
         </a>
       </li>
@@ -305,11 +338,16 @@
         </a>
       </li>
     </ul>
-  </main>
+  </footer>
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-sprite">
     <symbol id="codepen" viewBox="0 0 48 48">
       <g transform="scale(0.046875 0.046875)">
         <path d="M123.429 668l344.571 229.714v-205.143l-190.857-127.429zM88 585.714l110.286-73.714-110.286-73.714v147.429zM556 897.714l344.571-229.714-153.714-102.857-190.857 127.429v205.143zM512 616l155.429-104-155.429-104-155.429 104zM277.143 458.857l190.857-127.429v-205.143l-344.571 229.714zM825.714 512l110.286 73.714v-147.429zM746.857 458.857l153.714-102.857-344.571-229.714v205.143zM1024 356v312c0 14.286-7.429 28.571-19.429 36.571l-468 312c-7.429 4.571-16 7.429-24.571 7.429s-17.143-2.857-24.571-7.429l-468-312c-12-8-19.429-22.286-19.429-36.571v-312c0-14.286 7.429-28.571 19.429-36.571l468-312c7.429-4.571 16-7.429 24.571-7.429s17.143 2.857 24.571 7.429l468 312c12 8 19.429 22.286 19.429 36.571z"></path>
+      </g>
+    </symbol>
+    <symbol id="dev" viewBox="0 0 6.1 3">
+      <g transform="scale(0.046875 0.046875)">
+        <path d="M0 33v32h11.3c12.5 0 17.7-1.6 21.5-6.5 3.8-4.8 4.4-9 4-28-.3-16.8-.5-18.2-2.7-21.8C30.3 2.5 26.1 1 12 1H0v32zm23.1-19.1c2.3 1.9 2.4 2.3 2.4 18.5 0 15.7-.1 16.7-2.2 18.8-1.7 1.6-3.5 2.2-7 2.2l-4.8.1-.3-20.8L11 12h4.9c3.3 0 5.6.6 7.2 1.9zM46.1 3.6c-2 2.6-2.1 3.9-2.1 29.6v26.9l2.5 2.4c2.3 2.4 2.9 2.5 16 2.5H76V54.1l-10.2-.3-10.3-.3v-15l6.3-.3 6.2-.3V27H55V12h21V1H62.1c-13.9 0-14 0-16 2.6zM87 15.2c2.1 7.9 5.5 20.8 7.6 28.8 3.2 12.3 4.3 15 7 17.7 1.9 2 4.2 3.3 5.7 3.3 3.1 0 7.1-3.1 8.5-6.7 1-2.6 15.2-55.6 15.2-56.8 0-.3-2.8-.5-6.2-.3l-6.3.3-5.6 21.5c-3.5 13.6-5.8 20.8-6.2 19.5C105.9 40 96 1.9 96 1.4c0-.2-2.9-.4-6.4-.4h-6.4L87 15.2z"></path>
       </g>
     </symbol>
     <symbol id="facebook" viewBox="0 0 48 48">
@@ -362,7 +400,7 @@
   <script>
   WebFont.load({
   google: {
-    families: ['Roboto:400,900', 'Schoolbell']
+    families: ['Roboto:400,700', 'Schoolbell']
   }
 });
 </script>
