@@ -103,7 +103,7 @@
 
     .link-list {
       list-style-type: none;
-      margin: 2rem 0;
+      margin: 1.5rem 0;
       padding: 0;
     }
 
@@ -113,9 +113,11 @@
     }
 
     .link-list__link {
+      align-items: center;
       background-color: transparent;
-      display: inline-block;
-      padding: 7.5px;
+      display: flex;
+      flex-direction: column;
+      padding: .5rem;
       position: relative;
       text-decoration: none;
     }
@@ -135,7 +137,7 @@
     .link-list__icon--dev {
       background-color: DimGrey;
       fill: White;
-      padding: .5rem;
+      padding: 0 .5rem;
     }
 
     .link-list__link:focus .link-list__icon--codepen,
@@ -196,18 +198,15 @@
     .link-list__tooltip {
       background-color: Black;
       border-radius: 3px;
-      bottom: 110%;
       color: White;
       display: inline-block;
-      font-size: .75rem;
-      left: 50%;
-      margin-left: -50%;
+      font-size: 1rem;
       opacity: 0;
       text-align: center;
+      transform: translateY(-150%);
       transition: all .3s ease;
-      padding: 5px;
+      padding: .25rem .5rem;
       position: absolute;
-      width: 100%;
     }
 
     .link-list__tooltip:before {
@@ -226,7 +225,7 @@
 
     .link-list__link:focus .link-list__tooltip,
     .link-list__link:hover .link-list__tooltip {
-      bottom: 100%;
+      transform: translateY(-125%);
       opacity: 1
     }
 
