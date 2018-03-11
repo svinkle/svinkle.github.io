@@ -1,0 +1,30 @@
+{
+  "short_name": "Scott Vinkle",
+  "name": "Scott Vinkle's Homepage",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#DC143C",
+  "icons": [
+    {
+      "src": "https://github.com/svinkle.png?size=48",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "https://github.com/svinkle.png?size=96",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "https://github.com/svinkle.png?size=192",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://github.com/svinkle.png?size=512",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html"
+}
