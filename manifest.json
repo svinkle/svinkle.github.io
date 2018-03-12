@@ -3,7 +3,7 @@
   "name": "Scott Vinkle's Homepage",
   "display": "browser",
   "background_color": "#FFFFFF",
-  "theme_color": "#DC143C",
+  "theme_color": "#000000",
   "icons": [
     {
       "src": "https://github.com/svinkle.png?size=48",
