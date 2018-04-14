@@ -10,214 +10,43 @@
   <meta name="theme-color" content="#000000">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" sizes="192x192" href="https://github.com/svinkle.png?size=192">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Roboto", sans-serif;
-      font-size: 1.5rem;
-      margin: 0 auto;
-      max-width: 34rem;
-      padding: 0 2rem;
-    }
-
-    a {
-      color: Crimson;
-      text-decoration-skip: ink;
-      transition: color .25s;
-    }
-
-    a:focus,
-    a:hover {
-      color: FireBrick;
-    }
-
-    h1,
-    h2 {
-      font-family: "Schoolbell", sans-serif;
-      margin: 2rem 0 -.5rem;
-    }
-
-    h1 {
-      font-size: 5rem;
-    }
-
-    h2 {
-      font-size: 3rem;
-    }
-
-    p {
-      line-height: 1.25;
-    }
-
-    li {
-      margin-bottom: .25rem;
-    }
-
-    li ul {
-      margin: .75rem 0;
-    }
-
-    time {
-      font-size: 1rem;
-    }
-
-    .link-list {
-      display: flex;
-      flex-wrap: wrap;
-      list-style-type: none;
-      margin: 1rem -.5rem 2rem;
-      padding: 0;
-    }
-
-    .link-list__link {
-      align-items: center;
-      background-color: transparent;
-      display: flex;
-      flex-direction: column;
-      padding: .5rem;
-      position: relative;
-      text-decoration: none;
-    }
-
-    .link-list__link:focus,
-    .link-list__link:hover {
-      background-color: transparent;
-    }
-
-    .link-list__link:before {
-      background-color: Black;
-      border-radius: .188rem;
-      color: White;
-      content: attr(aria-label);
-      display: inline-block;
-      font-size: 1rem;
-      opacity: 0;
-      padding: .5rem;
-      position: absolute;
-      text-align: center;
-      transition: all .25s ease;
-    }
-
-    .link-list__link:focus:before,
-    .link-list__link:hover:before {
-      opacity: 1;
-      transform: translateY(-110%);
-    }
-
-    .link-list__icon {
-      fill: DimGrey;
-      height: 3rem;
-      width: 3rem;
-    }
-
-    .link-list__icon--dev {
-      background-color: DimGrey;
-      fill: White;
-      padding: 0 .5rem;
-    }
-
-    .link-list__link:focus .link-list__icon--codepen,
-    .link-list__link:hover .link-list__icon--codepen {
-      fill: #000;
-    }
-
-    .link-list__link:focus .link-list__icon--dev,
-    .link-list__link:hover .link-list__icon--dev {
-      background-color: #000;
-    }
-
-    .link-list__link:focus .link-list__icon--facebook,
-    .link-list__link:hover .link-list__icon--facebook {
-      fill: #4267b2;
-    }
-
-    .link-list__link:focus .link-list__icon--github,
-    .link-list__link:hover .link-list__icon--github {
-      fill: #24292e;
-    }
-
-    .link-list__link:focus .link-list__icon--instagram,
-    .link-list__link:hover .link-list__icon--instagram {
-      fill: #262626;
-    }
-
-    .link-list__link:focus .link-list__icon--medium,
-    .link-list__link:hover .link-list__icon--medium {
-      fill: #292929;
-    }
-
-    .link-list__link:focus .link-list__icon--npm,
-    .link-list__link:hover .link-list__icon--npm {
-      fill: #C12127;
-    }
-
-    .link-list__link:focus .link-list__icon--reddit,
-    .link-list__link:hover .link-list__icon--reddit {
-      fill: #ff4500;
-    }
-
-    .link-list__link:focus .link-list__icon--steam,
-    .link-list__link:hover .link-list__icon--steam {
-      fill: #171a21;
-    }
-
-    .link-list__link:focus .link-list__icon--twitch,
-    .link-list__link:hover .link-list__icon--twitch {
-      fill: #4b367c;
-    }
-
-    .link-list__link:focus .link-list__icon--twitter,
-    .link-list__link:hover .link-list__icon--twitter {
-      fill: #1da1f2;
-    }
-
-    .link-list__link:focus .link-list__icon--youtube,
-    .link-list__link:hover .link-list__icon--youtube {
-      fill: #e62117;
-    }
-
-    .svg-sprite {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header>
     <h1>Hi, I'm Scott.</h1>
-    <p>I'm a front end developer and web accessibility advocate at <a href="https://shopify.com">Shopify</a>.</p>
+    <p>I'm a front end developer and web accessibility advocate at <a href="https://shopify.com" aria-describedby="external-site">Shopify</a>.</p>
   </header>
   <main>
     <h2>Some history</h2>
     <p>I've been coding on the web for <span id="codingYears">a long while</span>.</p>
-    <p>Since my first experience with <a href="https://en.wikipedia.org/wiki/Screen_reader">screen reader</a> technology, my primary focus has been to <a href="https://medium.com/@svinkle/listening-to-the-web-part-one-thinking-in-accessibility-57af3cdb04e1">create accessible user experiences</a>      with HTML, CSS, and JavaScript.</p>
+    <p>Since my first experience with <a href="https://en.wikipedia.org/wiki/Screen_reader" aria-describedby="external-site">screen reader</a> technology, my primary focus has been to <a href="https://medium.com/@svinkle/listening-to-the-web-part-one-thinking-in-accessibility-57af3cdb04e1" aria-describedby="external-site">create accessible user experiences</a>      with HTML, CSS, and JavaScript.</p>
     <h2>I also…</h2>
     <ul>
-      <li>co-organize the <a href="https://twitter.com/CodePenOttawa">#CodePenOttawa</a> meetup;</li>
-      <li>co-organize the <a href="http://a11y.tours/">A11Y Tour</a> conference;</li>
-      <li>co-lead a <a href="http://kingston.canadalearningcode.ca">Canada Learning Code</a> chapter;</li>
-      <li>maintain <a href="http://a11yproject.com">The A11Y Project</a>.</li>
+      <li>co-organize the <a href="https://twitter.com/CodePenOttawa" aria-describedby="external-site">#CodePenOttawa</a> meetup;</li>
+      <li>co-organize the <a href="http://a11y.tours/" aria-describedby="external-site">A11Y Tour</a> conference;</li>
+      <li>co-lead a <a href="http://kingston.canadalearningcode.ca" aria-describedby="external-site">Canada Learning Code</a> chapter;</li>
+      <li>maintain <a href="https://a11yproject.com" aria-describedby="external-site">The A11Y Project</a>.</li>
     </ul>
     <h2>Talks</h2>
     <ul>
-      <li><a href="https://svinkle.github.io/launchy-talk/">Launchy!</a>
+      <li><a href="https://svinkle.github.io/launchy-talk/" aria-describedby="external-site">Launchy!</a>
         <ul>
-          <li><a href="https://nvite.com/CodePenOttawa/69dv8g">#CodePenOttawa</a><br><time datetime="2017-09-27T18:30">Sept 27, 2017</time></li>
-          <li><a href="https://meetup.com/Kingston-Developers/events/244549753/">Kingston Developers</a><br><time datetime="2017-12-13T19:30">Dec 13, 2017</time></li>
+          <li><a href="https://nvite.com/CodePenOttawa/69dv8g" aria-describedby="external-site">#CodePenOttawa</a><br><time datetime="2017-09-27T18:30">Sept 27, 2017</time></li>
+          <li><a href="https://meetup.com/Kingston-Developers/events/244549753/" aria-describedby="external-site">Kingston Developers</a><br><time datetime="2017-12-13T19:30">Dec 13, 2017</time></li>
         </ul>
       </li>
-      <li><a href="https://svinkle.github.io/creating-accessible-react-apps-talk">Creating Accessible React Apps</a>
+      <li><a href="https://svinkle.github.io/creating-accessible-react-apps-talk" aria-describedby="external-site">Creating Accessible React Apps</a>
         <ul>
-          <li><a href="http://a11yto.com/talks">#a11yTO Camp</a><br><time datetime="2017-11-18T14:45">Nov 18, 2017</time></li>
-          <li><a href="https://www.meetup.com/Ottawa-JavaScript/events/241844554/">OttawaJS</a><br><time datetime="2018-02-21T12:00">Feb 21, 2018</time></li>
-          <li><a href="http://a11y.tours/">A11Y Tour (Ottawa)</a><br><time datetime="2018-02-23T12:00">Feb 23, 2018</time></li>
-          <li><a href="http://a11y.tours/">A11Y Tour (Montreal)</a><br><time datetime="2018-02-24T12:00">Feb 24, 2018</time></li>
-          <li><a href="https://groups.drupal.org/node/518261">#a11yTalks</a><br><time datetime="2018-02-28T12:00">Feb 28, 2018</time></li>
-          <li><a href="https://www.shopify.ca/partners/blog/topics/webinars">Shopify Partners Webinar</a><br><time datetime="2018-03-15T12:00">Mar 15, 2018</time></li>
-          <li><a href="https://forwardjs.com/ottawa">ForwardJS</a><br><time datetime="2018-04-05T12:00">Apr 05, 2018</time></li>
+          <li><a href="http://a11yto.com/talks" aria-describedby="external-site">#a11yTO Camp</a><br><time datetime="2017-11-18T14:45">Nov 18, 2017</time></li>
+          <li><a href="https://www.meetup.com/Ottawa-JavaScript/events/241844554/" aria-describedby="external-site">OttawaJS</a><br><time datetime="2018-02-21T12:00">Feb 21, 2018</time></li>
+          <li><a href="http://a11y.tours/" aria-describedby="external-site">A11Y Tour (Ottawa)</a><br><time datetime="2018-02-23T12:00">Feb 23, 2018</time></li>
+          <li><a href="http://a11y.tours/" aria-describedby="external-site">A11Y Tour (Montreal)</a><br><time datetime="2018-02-24T12:00">Feb 24, 2018</time></li>
+          <li><a href="https://groups.drupal.org/node/518261" aria-describedby="external-site">#a11yTalks</a><br><time datetime="2018-02-28T12:00">Feb 28, 2018</time></li>
+          <li><a href="https://www.shopify.ca/partners/blog/creating-accessible-react-apps" aria-describedby="external-site">Shopify Partners Webinar</a><br><time datetime="2018-03-15T12:00">Mar 15, 2018</time></li>
+          <li><a href="https://forwardjs.com/ottawa" aria-describedby="external-site">ForwardJS</a><br><time datetime="2018-04-05T12:00">Apr 05, 2018</time></li>
         </ul>
       </li>
     </ul>
@@ -226,92 +55,95 @@
     <h2>Find me elsewhere</h2>
     <ul class="link-list">
       <li class="link-list__item">
-        <a href="https://codepen.io/svinkle" class="link-list__link" aria-label="CodePen">
-          <svg class="link-list__icon link-list__icon--codepen" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+        <a href="https://codepen.io/svinkle" class="link-list__link" aria-label="CodePen" aria-describedby="external-site">
+          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
             <use xlink:href="#codepen"></use>
           </svg>
         </a>
       </li>
       <li class="link-list__item">
-        <a href="https://dev.to/svinkle" class="link-list__link" aria-label="DEV">
+        <a href="https://dev.to/svinkle" class="link-list__link" aria-label="DEV" aria-describedby="external-site">
           <svg class="link-list__icon link-list__icon--dev" viewBox="0 0 6.1 3" focusable="false" aria-hidden="true">
             <use xlink:href="#dev"></use>
           </svg>
         </a>
       </li>
       <li class="link-list__item">
-        <a href="https://facebook.com/svinkle" class="link-list__link" aria-label="Facebook">
+        <a href="https://facebook.com/svinkle" class="link-list__link" aria-label="Facebook" aria-describedby="external-site">
           <svg class="link-list__icon link-list__icon--facebook" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
             <use xlink:href="#facebook"></use>
           </svg>
         </a>
       </li>
       <li class="link-list__item">
-        <a href="https://github.com/svinkle" class="link-list__link" aria-label="GitHub">
-          <svg class="link-list__icon link-list__icon--github" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+        <a href="https://github.com/svinkle" class="link-list__link" aria-label="GitHub" aria-describedby="external-site">
+          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
             <use xlink:href="#github"></use>
           </svg>
         </a>
       </li>
       <li class="link-list__item">
-        <a href="https://instagram.com/scottvinkle" class="link-list__link" aria-label="Instagram">
-          <svg class="link-list__icon link-list__icon--instagram" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+        <a href="https://instagram.com/scottvinkle" class="link-list__link" aria-label="Instagram" aria-describedby="external-site">
+          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
             <use xlink:href="#instagram"></use>
           </svg>
         </a>
       </li>
       <li class="link-list__item">
-        <a href="https://medium.com/@svinkle" class="link-list__link" aria-label="Medium">
-          <svg class="link-list__icon link-list__icon--medium" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+        <a href="https://medium.com/@svinkle" class="link-list__link" aria-label="Medium" aria-describedby="external-site">
+          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
             <use xlink:href="#medium"></use>
           </svg>
         </a>
       </li>
       <li class="link-list__item">
-        <a href="https://www.npmjs.com/~svinkle" class="link-list__link" aria-label="npm">
-          <svg class="link-list__icon link-list__icon--npm" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+        <a href="https://www.npmjs.com/~svinkle" class="link-list__link" aria-label="npm" aria-describedby="external-site">
+          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
             <use xlink:href="#npm"></use>
           </svg>
         </a>
       </li>
       <li class="link-list__item">
-        <a href="https://reddit.com/user/scottvinkle" class="link-list__link" aria-label="Reddit">
-          <svg class="link-list__icon link-list__icon--reddit" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+        <a href="https://reddit.com/user/scottvinkle" class="link-list__link" aria-label="Reddit" aria-describedby="external-site">
+          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
             <use xlink:href="#reddit"></use>
           </svg>
         </a>
       </li>
       <li class="link-list__item">
-        <a href="https://steamcommunity.com/id/svinkle" class="link-list__link" aria-label="Steam">
-          <svg class="link-list__icon link-list__icon--steam" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+        <a href="https://steamcommunity.com/id/svinkle" class="link-list__link" aria-label="Steam" aria-describedby="external-site">
+          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
             <use xlink:href="#steam"></use>
           </svg>
         </a>
       </li>
       <li class="link-list__item">
-        <a href="https://twitch.tv/svinkle" class="link-list__link" aria-label="Twitch">
-          <svg class="link-list__icon link-list__icon--twitch" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+        <a href="https://twitch.tv/svinkle" class="link-list__link" aria-label="Twitch" aria-describedby="external-site">
+          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
             <use xlink:href="#twitch"></use>
           </svg>
         </a>
       </li>
       <li class="link-list__item">
-        <a href="https://twitter.com/svinkle" class="link-list__link" aria-label="Twitter">
-          <svg class="link-list__icon link-list__icon--twitter" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+        <a href="https://twitter.com/svinkle" class="link-list__link" aria-label="Twitter" aria-describedby="external-site">
+          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
             <use xlink:href="#twitter"></use>
           </svg>
         </a>
       </li>
       <li class="link-list__item">
-        <a href="https://youtube.com/scottvinkle" class="link-list__link" aria-label="YouTube">
-          <svg class="link-list__icon link-list__icon--youtube" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
+        <a href="https://youtube.com/scottvinkle" class="link-list__link" aria-label="YouTube" aria-describedby="external-site">
+          <svg class="link-list__icon" viewBox="0 0 48 48" focusable="false" aria-hidden="true">
             <use xlink:href="#youtube"></use>
           </svg>
         </a>
       </li>
     </ul>
   </footer>
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-sprite">
+  <div hidden>
+    <span id="external-site">opens an external site</span>
+  </div>
+  <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" hidden>
     <symbol id="codepen" viewBox="0 0 48 48">
       <g transform="scale(0.046875 0.046875)">
         <path d="M123.429 668l344.571 229.714v-205.143l-190.857-127.429zM88 585.714l110.286-73.714-110.286-73.714v147.429zM556 897.714l344.571-229.714-153.714-102.857-190.857 127.429v205.143zM512 616l155.429-104-155.429-104-155.429 104zM277.143 458.857l190.857-127.429v-205.143l-344.571 229.714zM825.714 512l110.286 73.714v-147.429zM746.857 458.857l153.714-102.857-344.571-229.714v205.143zM1024 356v312c0 14.286-7.429 28.571-19.429 36.571l-468 312c-7.429 4.571-16 7.429-24.571 7.429s-17.143-2.857-24.571-7.429l-468-312c-12-8-19.429-22.286-19.429-36.571v-312c0-14.286 7.429-28.571 19.429-36.571l468-312c7.429-4.571 16-7.429 24.571-7.429s17.143 2.857 24.571 7.429l468 312c12 8 19.429 22.286 19.429 36.571z"></path>
@@ -374,29 +206,7 @@
     </symbol>
   </svg>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-  <script>
-  WebFont.load({
-  google: {
-    families: ['Roboto', 'Schoolbell']
-  }
-});
-
-(() => {
-  const normalize = document.createElement('link');
-  const links = document.getElementsByTagName('link')[0];
-  const yearStartedCoding = 2000;
-  const thisYear = new Date().getFullYear();
-  const codingYears = thisYear - yearStartedCoding;
-  const codingYearsNode = document.querySelector('#codingYears');
-
-  normalize.rel = 'stylesheet';
-  normalize.href =
-    'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css';
-  links.parentNode.insertBefore(normalize, links);
-
-  codingYearsNode.textContent = `${codingYears} years`;
-})();
-</script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

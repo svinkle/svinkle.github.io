@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1rem 2rem;
+}
+
+a {
+  color: Crimson;
+  text-decoration-skip: ink;
+  transition: color .25s;
+}
+
+a:focus,
+a:hover {
+  color: FireBrick;
+}
+
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  line-height: 1.25;
+}
+
+li ul {
+  margin: .75rem 0;
+}
+
+li {
+  margin-bottom: .25rem;
+}
+
+legend {
+  padding: 0 1rem;
+}
+
+fieldset {
+  border: solid LightGrey 1px;
+  border-radius: .25rem;
+}
+
+button {
+  background-color: Crimson;
+  color: white;
+  border: 0;
+  border-radius: .25rem;
+  padding: .5rem 1rem;
+}
+
+button[disabled] {
+  background-color: WhiteSmoke;
+  border: solid LightGrey 1px;
+  color: DarkGrey;
+}
+
+code {
+  background-color: WhiteSmoke;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: -1px;
+}
+
+.horizontal-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-list__item {
+  display: inline-block;
+  margin: .25rem;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+.icon--new-window {
+  height: 1rem;
+  width: 1rem;
+}
+
+.icon--social {
+  height: 2rem;
+  width: 2rem;
+}
