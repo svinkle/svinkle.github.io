@@ -81,6 +81,16 @@ button[disabled] {
   color: DarkGrey;
 }
 
+table {
+    border-collapse: collapse;
+    margin: 2em 0;
+}
+
+th, td {
+    border: solid Silver 1px;
+    padding: 1em;
+}
+
 code, kbd {
   background-color: WhiteSmoke;
   font-family: "Source Code Pro", monospace;
