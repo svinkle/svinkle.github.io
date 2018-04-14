@@ -67,7 +67,7 @@ button {
   border: 0;
   border-radius: .25rem;
   padding: .5rem 1rem;
-  transition: color .25s;
+  transition: background .25s;
 }
 
 button:focus,
