@@ -25,6 +25,10 @@ h1, h2, h3 {
   font-family: "Oswald", sans-serif;
 }
 
+h2, h3:not(:first-child) {
+  margin: 3rem 0 1rem;
+}
+
 p {
   line-height: 1.25;
 }
@@ -35,6 +39,12 @@ li ul {
 
 li {
   margin-bottom: .25rem;
+}
+
+label,
+textarea {
+  display: block;
+  margin: 1rem 0;
 }
 
 legend {
@@ -89,4 +99,9 @@ code {
 .icon--social {
   height: 2rem;
   width: 2rem;
+}
+
+.error {
+  color: Crimson;
+  display: block;
 }
