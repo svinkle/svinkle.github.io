@@ -67,6 +67,12 @@ button {
   border: 0;
   border-radius: .25rem;
   padding: .5rem 1rem;
+  transition: color .25s;
+}
+
+button:focus,
+button:hover {
+  background-color: FireBrick;
 }
 
 button[disabled] {
@@ -75,7 +81,7 @@ button[disabled] {
   color: DarkGrey;
 }
 
-code {
+code, kbd {
   background-color: WhiteSmoke;
   font-family: "Source Code Pro", monospace;
   letter-spacing: -1px;
