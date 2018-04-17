@@ -21,7 +21,7 @@ a:hover {
   color: FireBrick;
 }
 
-h1, h2, h3 {
+h1, h2, h3, caption {
   font-family: "Oswald", sans-serif;
 }
 
@@ -79,6 +79,11 @@ button[disabled] {
   background-color: WhiteSmoke;
   border: solid LightGrey 1px;
   color: DarkGrey;
+}
+
+caption {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 table {
