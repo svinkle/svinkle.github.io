@@ -156,6 +156,12 @@ textarea[disabled] {
   display: block;
 }
 
+.container {
+  background-color: WhiteSmoke;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
