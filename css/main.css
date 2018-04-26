@@ -4,9 +4,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0 auto;
-  max-width: 36rem;
+  max-width: 40rem;
   padding: 0 2rem;
 }
 
@@ -28,12 +28,11 @@ h2 {
 
 h1 {
   font-family: "Schoolbell", sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 3rem;
 }
 
 p {
@@ -52,12 +51,22 @@ time {
   font-size: 1rem;
 }
 
+code, kbd {
+  background-color: WhiteSmoke;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: -1px;
+}
+
 .link-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: 1rem -.5rem 2rem;
+  margin: 1.25rem -.5rem 3rem;
   padding: 0;
+}
+
+.link-list__item {
+  margin: 0;
 }
 
 .link-list__link {
@@ -65,7 +74,7 @@ time {
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  padding: .5rem;
+  padding: .25rem;
   position: relative;
   text-decoration: none;
 }
@@ -81,7 +90,7 @@ time {
   color: White;
   content: attr(aria-label);
   display: inline-block;
-  font-size: 1rem;
+  font-size: .75rem;
   opacity: 0;
   padding: .5rem;
   position: absolute;
@@ -97,8 +106,8 @@ time {
 
 .link-list__icon {
   fill: currentColor;
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .link-list__icon--dev {
