@@ -57,6 +57,10 @@ code, kbd {
   letter-spacing: -1px;
 }
 
+.byline {
+  font-size: 1.5rem;
+}
+
 .link-list {
   display: flex;
   flex-wrap: wrap;
