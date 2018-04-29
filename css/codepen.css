@@ -102,10 +102,11 @@ th, td {
     padding: 1em;
 }
 
-code, kbd {
+code, kbd, pre {
   background-color: WhiteSmoke;
   font-family: "Source Code Pro", monospace;
   letter-spacing: -1px;
+  overflow-x: scroll;
 }
 
 [tabindex="0"],
