@@ -27,6 +27,10 @@ a:hover {
   color: FireBrick;
 }
 
+a:active {
+  color: DarkRed;
+}
+
 h1, h2, h3, caption {
   font-family: "Montserrat", sans-serif;
 }
