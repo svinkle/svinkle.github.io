@@ -56,6 +56,10 @@ time {
   font-size: 1rem;
 }
 
+s {
+  opacity: .6;
+}
+
 code, kbd {
   background-color: WhiteSmoke;
   font-family: "Source Code Pro", monospace;
