@@ -1,7 +1,7 @@
 {
   "short_name": "Scott Vinkle",
   "name": "Scott Vinkle's Homepage",
-  "display": "browser",
+  "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#000000",
   "icons": [
