@@ -1,10 +1,10 @@
 (() => {
-  const yearStartedCoding = 2000;
-  const thisYear = new Date().getFullYear();
-  const codingYears = thisYear - yearStartedCoding;
-  const codingYearsNode = document.querySelector('#codingYears');
+//   const yearStartedCoding = 2000;
+//   const thisYear = new Date().getFullYear();
+//   const codingYears = thisYear - yearStartedCoding;
+//   const codingYearsNode = document.querySelector('#codingYears');
 
-  codingYearsNode.textContent = `${codingYears} years`;
+//   codingYearsNode.textContent = `${codingYears} years`;
 
   WebFont.load({
     google: {
