@@ -1,5 +1,5 @@
 # svinkle.me
-My homepage — https://svinkle.me
+My homepage — https://svinkle.github.io
 
 ## License
 
